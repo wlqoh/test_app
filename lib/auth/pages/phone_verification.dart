@@ -26,7 +26,7 @@ class PhoneVerification extends StatelessWidget {
                 ),
                 const SizedBox(height: 15),
                 Text(
-                  'Введие код, отправленный на номер',
+                  'Введите код, отправленный на номер',
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
                 Text(

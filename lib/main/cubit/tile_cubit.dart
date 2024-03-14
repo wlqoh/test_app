@@ -29,7 +29,6 @@ class TileCubit extends Cubit<TileState> {
         from == '' ||
         to == '') {
       emit(state.copyWith(status: TileStatus.error));
-      print(state.status);
     }
     else {
       emit(state.copyWith(status: TileStatus.initial));

@@ -64,14 +64,12 @@ class _TileWidgetState extends State<TileWidget> {
     switch (result) {
       case 'delete':
         {
-          print('good');
           if (!context.mounted) return;
           context.read<TileCubit>().deleteTile(widget.index);
           break;
         }
       case 'cancel':
         {
-          print('ff');
           break;
         }
     }
