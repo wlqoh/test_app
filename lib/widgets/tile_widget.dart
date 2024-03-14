@@ -36,9 +36,18 @@ class _TileWidgetState extends State<TileWidget> {
     final result = await showMenu(
       context: context,
       position: RelativeRect.fromRect(
-        Rect.fromLTWH(_tapPosition.dx, _tapPosition.dy, 10, 10),
-        Rect.fromLTWH(0, 0, overlay!.paintBounds.size.width,
-            overlay.paintBounds.size.height),
+        Rect.fromLTWH(
+          _tapPosition.dx,
+          _tapPosition.dy,
+          10,
+          10,
+        ),
+        Rect.fromLTWH(
+          0,
+          0,
+          overlay!.paintBounds.size.width,
+          overlay.paintBounds.size.height,
+        ),
       ),
       items: [
         const PopupMenuItem(
@@ -56,6 +65,7 @@ class _TileWidgetState extends State<TileWidget> {
       case 'delete':
         {
           print('good');
+          if (!context.mounted) return;
           context.read<TileCubit>().deleteTile(widget.index);
           break;
         }
