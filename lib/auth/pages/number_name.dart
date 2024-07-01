@@ -24,17 +24,19 @@ class AuthWithNumber extends StatelessWidget {
                   'Авторизация',
                   style: Theme.of(context).textTheme.displayLarge,
                 ),
-                const SizedBox(height: 15),
+                const Flexible(
+                  child: SizedBox(height: 15),
+                ),
                 Text(
                   'Введите номер телефона для авторизации',
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
-                const SizedBox(height: 100),
+                const Flexible(child: SizedBox(height: 100)),
                 PhoneNumberWidget(controller: controller1),
-                const SizedBox(height: 25),
+                const Flexible(child: SizedBox(height: 25)),
                 DefaultTextField(
                     controller: controller2, hintText: 'Введите ваше имя'),
-                const SizedBox(height: 30),
+                const Flexible(child: SizedBox(height: 30)),
                 DefaultButton(
                   onPressed: () {
                     Navigator.pushReplacement(

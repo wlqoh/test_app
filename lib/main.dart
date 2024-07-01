@@ -1,6 +1,6 @@
+import 'package:auth_task/auth/pages/number_name.dart';
 import 'package:auth_task/database/hive_db.dart';
 import 'package:auth_task/main/cubit/tile_cubit.dart';
-import 'package:auth_task/main/pages/tiles.dart';
 import 'package:auth_task/models/tile.dart';
 import 'package:auth_task/utils/theme.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: basicTheme(),
-        home: const TilesPage(),
+        home: const AuthWithNumber(),
       ),
     );
   }

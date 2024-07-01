@@ -43,6 +43,7 @@ class AddTileTextField extends StatelessWidget {
             suffixIcon: suffixIcon,
             filled: true,
             fillColor: Colors.white,
+            contentPadding: const EdgeInsets.only(left: 11, right: 3, top: 14, bottom: 14),
             enabledBorder: OutlineInputBorder(
               borderSide: const BorderSide(color: Colors.transparent),
               borderRadius: BorderRadius.circular(8),
@@ -50,6 +51,13 @@ class AddTileTextField extends StatelessWidget {
             focusedBorder: OutlineInputBorder(
               borderSide: const BorderSide(color: Colors.transparent),
               borderRadius: BorderRadius.circular(8),
+            ),
+            errorStyle: const TextStyle(height: 0.1),
+            errorBorder: const OutlineInputBorder(
+              borderSide: BorderSide(
+                color: Colors.transparent,
+                width: 0,
+              ),
             ),
             hintText: hintText,
             hintStyle: Theme.of(context).textTheme.titleSmall),

@@ -63,7 +63,6 @@ class _AddTilePageState extends State<AddTilePage> {
       backgroundColor: Colors.grey.shade200,
       body: SafeArea(
         child: ListView(
-          physics: const NeverScrollableScrollPhysics(),
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15),
